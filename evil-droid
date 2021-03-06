@@ -610,9 +610,6 @@ function sign()
  if [ $rc != 0 ]; then
    echo -e $red ""
    echo "[!] Failed to verify signed artifacts"
-   apache_svc_stop
-   postgresql_stop
-   exit $rc
  fi
  echo -e $yellow
  echo "[*] Aligning recompiled APK..."
